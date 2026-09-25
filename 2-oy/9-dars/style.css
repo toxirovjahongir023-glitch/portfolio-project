@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.d {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f5464;
+}
+
+.d1 {
+    display: flex;
+    gap: 70px;
+    margin-top: 20px;
+    color: #A1B5BB;
+}
+
+.h {
+    margin-top: 50px;
+    color: #08546C;
+}
+
+.card1 {
+    width: 273px;
+    height: 251px;
+    padding: 30px;
+    background-color: rgb(249, 249, 249);
+}
+
+.h2 {
+    color: white;
+   
+}
+
+.card2 {
+     width: 273px;
+    height: 251px;
+    padding: 20px;
+    background-color: #08546C;
+}
+
+.p {
+    color: #a4aeb1;
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+    margin-left: 170px;
+    margin-top: 70px;
+}
+
+.port {
+    width: 550px;
+    height: 650px;
+     background-color: rgb(249, 249, 249);
+     padding: 20px;
+}
+
+.s {
+    color: #FFA800;
+}
+
+
+.ports {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-evenly;
+
+    margin-top: 50px;
+}
+
+.x {
+    margin-top: 38px;
+    color: #08546C; 
+}

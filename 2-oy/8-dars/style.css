@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: sans-serif;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.d1 {
+    display: flex;
+    margin-top: 13px;
+    gap: 100px;
+}
+
+.img {
+   margin-left: 60px;
+}
+
+.d2 {
+    width: 188px;
+    height: 97px;
+    border-radius: 15px;
+    background-color: black;
+    padding: 20px;
+}
+
+.h2 {
+    color: aliceblue;
+     font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+}
+
+.p {
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+.d3 {
+background-color: black;
+width: 253px;
+height: 97px;
+border-radius: 15px ;
+padding: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: 0.05%;
+}
+
+.section {
+    
+}
+
+.title {
+    margin-top: 100px;
+    font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;;
+}
+
+.paragraph {
+    font-family:font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; ;
+}
+
+.paragraph {
+    font-size: 20px;
+}
+
+.d4 {
+   
+}
+
+.image {
+    margin-left: 65px;
+}

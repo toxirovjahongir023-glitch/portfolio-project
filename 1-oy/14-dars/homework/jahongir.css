@@ -1,0 +1,61 @@
+.section {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+    
+
+
+.body {
+    background-color: rgb(210, 213, 216);
+}
+
+.paragraph {
+    color: blue; 
+}
+
+.header {
+    display: flex;
+    gap: 7px;
+    font-size: 40px;
+    margin-left: 160px;
+}
+
+.div {
+width: 290px;
+height: 520px;
+background-color: #FFFFFF;
+margin-top: 8px;
+border-radius: 12px;
+}
+
+.img {
+   width: 288px;
+   height: 288px; 
+}
+
+.p2 {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.oraymiz {
+    width: 240px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 35px;
+    font-size: 19px;
+}
+
+.image {
+        margin-top: 4px;
+        margin-right: 12px;
+        margin-bottom: 4px;
+        margin-left: 12px;
+}
+

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+   background-color: aquamarine;
+   background-position: center;
+    background-image: url(./Safari\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+ 
+}
+   
+
+.logo img {
+    width: 40px; 
+    list-style: none;
+    margin-left: 20px;   
+}
+
+.links {
+    display: inline-block;
+    list-style: none;
+    margin-left: 749px;
+}
+
+.links li {
+    display: inline-block;
+    margin-left: 50px;
+    margin: 29px;
+   
+}
+
+.links a {
+    color: #FFFFFF;
+}
+
+.li {
+    list-style: none;
+    display: inline-block;
+}
+
+.main {
+   
+    
+}
+
+.h1 {
+    width: 584px;
+    
+  font-size: 75px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.p {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 19px;
+    
+}
+
+.div {
+    padding: 150px;
+}
+
+.btn {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   padding: 12px 24px;
+   border: 2px solid white;
+   font-size: 20px;
+   font-weight: bold;
+   cursor: pointer;
+   background: transparent;
+   margin-top: 50px;
+}
+

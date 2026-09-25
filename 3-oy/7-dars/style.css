@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: greenyellow;
+}
+
+.container {
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    padding: 50px;
+    font-size: 40px;
+    width: 200px;
+    border-radius: 16px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+    transition: 0.6s;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 25px grey;
+    transform: translateY(-25px);
+}
+
+.card1:hover {
+    box-shadow: 0px 10px 25px grey;
+    transform: scale(1.2);
+}
+
+.card2:hover {
+    box-shadow: 0px 10px 25px grey;
+    transform: translateX(25px);
+}
+
+.card3:hover {
+    box-shadow: 0px 10px 25px grey;
+    transform: skew(-15deg);
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.front,
+.back {
+    width: 300px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.front {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front img,
+.back img {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.front h1 {
+    font-size: 30px;
+    color: red;
+}
+
+.front {
+    background-color: chocolate;
+    color: brown;
+}
+
+.back {
+    background-color: magenta;
+    color: brown;
+}
+
+.back h1 {
+    font-size: 30px;
+    color: blue;
+}
+
+.flip-inner {
+    transform-style: preserve-3d;
+    transition: 0.6s;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.flip:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: rgb(255, 140, 0);
+}

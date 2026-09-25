@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 149px;
+    height: 36px;
+    margin-left: 150px;
+}
+
+.div {
+    margin-left: 400px;
+}
+
+.ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.div1 {
+    margin-left: 100px;
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+}
+
+.div3 {
+    margin-left: 30px;
+}
+
+.btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid red;
+    background: white;
+    cursor: pointer;
+}
+
+.card {
+    width: 330px;
+    height: 720px;
+    border-radius: 10px;
+    border: 2px solid #DDDDDD;
+}
+
+.card-mini {
+    padding: 50px;
+}
+
+.h3 {
+     margin-left: 50px;
+}
+
+.h1 {
+    margin-left: 50px;
+}
+
+.btz {
+     width: 177px;
+    height: 45px;
+    border-radius: 50px;
+    border: 3px solid red;
+    background: white;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.free {
+    margin-left: 30px;
+}
+
+.btm {
+     width: 177px;
+    height: 45px;
+    border-radius: 50px;
+    border: 3px solid red;
+    background: rgb(239, 0, 0);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    margin-left: 200px;
+    gap: 50px;
+    margin-top: 50px;
+}
