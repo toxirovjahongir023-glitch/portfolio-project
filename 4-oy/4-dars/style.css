@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header {
+    background: linear-gradient(rgba(6, 112, 24, 0.973), blue);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header a {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: cursive;
+}
+
+
+.checkbox button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+}
+
+.checkbox {
+    display: flex;
+    gap: 30px;
+    margin-left: -60px;
+}
+
+.modal {
+    background-image: url("./image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: -590px;
+    border-radius: 20px;
+    display: none; 
+    
+}
+
+
+.check-label input:checked ~ .modal {
+    display: inline-block;
+}
+
+.modal form {
+     align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.modal form input {
+    padding: 10px 15px;
+    border-radius: 12px;
+    outline: none;
+    width: 300px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(124, 195, 19);
+}
+
+
+
+.check-label {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+}
+
+.check-label input {
+    appearance: none;
+}
+
+.modal button {
+    border: 2px solid  rgb(50, 11, 247);
+    width: 100%;
+}

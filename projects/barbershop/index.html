@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop | Premium</title>
+
+
+    <link rel="icon" type="image/png" href="./img/image.png">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <header>
+            <div class="container navbar">
+                <a href="" class="imperio">FAMOUS <span>CUTZ</span></a>
+
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/reviews.html">Reviews</a></li>
+                    <li><a href="./pages/membership.html">Membership</a></li>
+                    <li><a href="./pages/booking.html">Booking</a></li>
+                </ul>
+
+
+
+                <img src="./img/image.png" alt="" class="logo">
+            </div>
+        </header>
+
+        <main>
+            <section id="first-page">
+                <div class="container infos">
+                    <h2>Est. 2018 · Cape Coral, Florida</h2>
+                    <h1>Cape Coral’s <span>Premier </span> Barbershop</h1>
+                    <p>Precision haircuts, skin fades, beard grooming, hot towel services and modern men’s grooming.</p>
+
+                    <div>
+                        <button class="appointment">
+                            Book Appointment
+                        </button>
+                        <button class="call-now">
+                            <a href="https://www.instagram.com/?hl=en" target="_blank">Call Now</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+    <section id="about">
+        <div class="container about">
+            <div class="customers">
+                <h1>10,000+</h1>
+                <p>Haircuts Delivered</p>
+            </div>
+
+            <div class="customers">
+                <h1>2018</h1>
+                <p>Established</p>
+            </div>
+
+            <div class="customers">
+                <h1>1,800+</h1>
+                <p>Loyal Customers</p>
+            </div>
+
+            <div class="customers">
+                <h1>4.9★</h1>
+                <p>Average Rating</p>
+            </div>
+        </div>
+
+
+        <div class="container est">
+            <div class="shop">
+                <h2>About the shop</h2>
+                <h1>A Neighborhood Shop With Luxury Standards</h1>
+                <p>Established in 2018, FamousCutz is a premium neighborhood barbershop built for the men of Cape Coral.
+                    Modern atmosphere, professional licensed barbers, and a finish you can feel.</p>
+
+                <div class="container types">
+                    <div class="type1">
+                        <ul>
+                            <li>Skin fades</li>
+                            <li>Business cuts</li>
+                            <li>Military cuts</li>
+                            <li>Hot towel grooming</li>
+                        </ul>
+                    </div>
+
+                    <div class="type2">
+                        <ul>
+                            <li>Classic cuts</li>
+                            <li>Kids cuts</li>
+                            <li>Beard sculpting</li>
+                            <li>Facials & waxing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="ins">Walk-ins welcome. Appointments encouraged.</p>
+            </div>
+
+            <img src="./img/image copy 3.png" alt="">
+        </div>
+
+    </section>
+
+    </main>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

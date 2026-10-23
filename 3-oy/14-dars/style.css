@@ -1,0 +1,229 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CARD SECTION */
+#service {
+    min-height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* CARD CONTAINER */
+.cards {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px !important;
+}
+
+/* MAIN CARD */
+.card {
+    position: relative;
+    /* width: 100%; */
+    padding: 18px;
+    border-radius: 28px;
+    overflow: hidden;
+    cursor: pointer;
+    
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15);
+
+    transition: transform 0.5s ease,
+                box-shadow 0.5s ease,
+                border-color 0.5s ease;
+}
+
+/* LIGHT EFFECT */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 250px;
+    height: 250px;
+    background: #00c8ff;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.18;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    padding: 1px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.5),
+        transparent 40%,
+        rgba(0, 200, 255, 0.4)
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-14px) scale(1.02);
+    border-color: rgba(0, 200, 255, 0.6);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.6),
+        0 0 35px rgba(0, 200, 255, 0.18);
+}
+
+.card:hover::before {
+    opacity: 0.5;
+}
+
+/* CAR IMAGE */
+.card img {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition: transform 0.6s ease,
+                filter 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.025);
+    filter: brightness(1.1) saturate(1.15);
+}
+
+/* CARD TITLE */
+.card h1 {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 24px;
+    margin-bottom: 12px;
+
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+    line-height: 1.3;
+
+    transition: color 0.3s ease;
+}
+
+.card:hover h1 {
+    color: #69e3ff;
+}
+
+/* CARD DESCRIPTION */
+.card p {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 24px;
+
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+}
+
+/* BUTTON */
+.card button {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    padding: 15px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #00c8ff, #1675ff);
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(0, 140, 255, 0.25);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background 0.3s ease;
+}
+
+.card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 160, 255, 0.45);
+    background: linear-gradient(135deg, #32dcff, #398cff);
+}
+
+.card button:active {
+    transform: scale(0.97);
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 380px;
+        padding: 14px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .card h1 {
+        font-size: 22px;
+    }
+}

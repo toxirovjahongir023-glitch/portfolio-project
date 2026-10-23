@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: cursive;
 }
 
 a {
@@ -11,4 +11,110 @@ a {
 
 ul {
     list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: greenyellow;
+    border-bottom: 1px solid gray;
+    width: 1200px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    color: brown;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.logo {
+    font-size: 65px;
+    font-weight: 500;
+}
+
+.navbar button {
+    padding: 8px;
+    border-radius: 16px;
+    outline: none;
+    cursor: pointer;
+    background-color: blue;
+    width: 300px;
+    border: none;
+}
+
+.item {
+    background-image: url("./image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+    padding-bottom: 100px;
+}
+
+.item2 {
+    background-image: url("./image\ copy.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+    padding-bottom: 100px;
+}
+
+.item3 {
+    background-image: url("./image\ copy 3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+    padding-bottom: 100px;
+}
+
+.item1 h1 {
+    width: 600px;
+    color: rgb(61, 61, 155);
+    margin-left: 100px;
+}
+
+
+.owl-dots {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    top: -270px;
+}
+
+.owl-dots {
+    left: 0px !important;
+    text-align: right !important;
+    display: inline-block !important;
+}
+
+.owl-dot span {
+    border: 1px solid white !important;
+    /* width: 10px  !important ; */
+    /* font-size: 30px !important; */
+    transform: scale(1.6);
+    background-color: white !important;
+    transition: 0.5s;
+}
+
+.active span {
+    transform: scale(2);
+    background-color: orange !important;
+    border-color: orange !important;
 }

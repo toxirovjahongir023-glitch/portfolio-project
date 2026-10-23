@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="container navbar">
+            <a href="" class="logo">Logo</a>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Conatact</a></li>
+            </ul>
+            <button>
+                Sign Up
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="item1">
+                        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eaque dicta minus, nulla nobis tenetur architecto quod eveniet odit incidunt!</h1>
+                    </div>
+                </div>
+
+                 <div class="item2">
+                    <div class="item1">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore, blanditiis ipsa laudantium cum repellendus molestias vero recusandae minus tempora!</h1>
+                    </div>
+                </div>
+
+                 <div class="item3">
+                    <div class="item1">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore, blanditiis ipsa laudantium cum repellendus molestias vero recusandae minus tempora!</h1>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        
+  
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+
+        
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+</script>
+
 </body>
+
+
 </html>

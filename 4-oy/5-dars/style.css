@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.card {
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 29px;
+    background: linear-gradient(rgb(7, 255, 7), rgb(11, 52, 117));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.card p {
+    background: linear-gradient(rgb(231, 15, 15), rgb(11, 52, 117));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.card button {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: brown;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover button {
+    opacity: 1;
+}
+
+.card button:hover {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.cards {
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}

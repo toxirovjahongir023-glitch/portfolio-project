@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    background-color: rgb(166, 163, 163);
+  
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header a {
+    color: rgb(255, 253, 253);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.logo {
+    font-size: 30px;
+    background: linear-gradient(135deg, #800000, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.card {
+    width: 350px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: green;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.card h1 {
+    color: rgb(78, 61, 61);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgb(54, 25, 25);
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    opacity: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #114B3E;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    transition: 0.5s;
+    transition: 0.5s;
+}
+
+.card:hover button {
+    opacity: 1;
+}
+
+main {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 20px grey;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.checkbox {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    appearance: none;
+    border: 2px solid darkgoldenrod;
+    width: 70px;
+    border-radius: 20px;
+    height: 40px;
+    padding: 8px;
+    transition: 0.6s;
+}
+
+.checkbox::after {
+    content: url("./sun.svg");
+    display: inline-block;
+    margin-top: -1px;
+    transition: 0.5s;
+}
+
+.checkbox {
+    background-color: black;
+}
+
+
+
+.checkbox:checked {
+    background-color: rgb(255, 253, 253);
+}
+
+
+.checkbox:checked::after {
+    content: url("./moon.svg");
+    margin-left: 35px;
+    transition: 0.5s;
+}
+
+.h1 {
+    margin-bottom: 30px;
+   color: #051616;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.checkbox:checked ~ header {
+    background-color: rgb(53, 43, 43);
+}
+
+.checkbox:checked ~ main {
+     background-color: rgb(53, 43, 43);
+}
+
+.checkbox:checked ~ main section h2 {
+    color: white;
+}
+
+.checkbox:checked ~ header {
+      border-bottom: 2px solid rgb(87, 81, 81);
+}
